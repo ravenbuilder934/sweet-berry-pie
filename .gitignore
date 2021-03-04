@@ -1,0 +1,41 @@
+# eclipse
+/bin
+*.launch
+/.settings
+/.metadata
+/.classpath
+/.project
+/eclipse
+
+# idea
+/out
+*.ipr
+*.iws
+*.iml
+/.idea
+/classes
+
+# gradle
+/build
+/.gradle
+
+# other
+/.vscode
+/run
+/runData
+/runClient
+/runServer
+.cache
+/libs
+gradle\.properties
+
+# Exclude all Mac DS_Store files
+/**/.DS_Store
+
+# Exclude all Windows stuff
+/**/Thumbs.db
+
+README.txt
+*.hprof
+
+logs/
