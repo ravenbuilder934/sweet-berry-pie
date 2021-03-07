@@ -1,22 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
+  "pattern":
+  [
     "   ",
     "XY ",
     " Z "
   ],
-  "key": {
-    "X": {
-      "item": "minecraft:sweet_berries"
+  "key":
+  {
+    "X":
+    {
+      "item": "sweetberrypie:cookedsweetberries"
     },
-    "Y": {
+    "Y":
+    {
       "item": "minecraft:sugar"
     },
-    "Z": {
+    "Z":
+    {
       "item": "minecraft:egg"
     }
   },
-  "result": {
+  "result":
+  {
     "item": "sweetberrypie:sweetberrypie"
   }
 }

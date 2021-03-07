@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient":
+  {
+    "item": "minecraft:sweet_berries"
+  },
+  "result":
+  {
+    "item": "sweetberrypie:cookedsweetberries"
+  }
+}

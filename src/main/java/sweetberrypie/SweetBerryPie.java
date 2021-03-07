@@ -9,16 +9,19 @@ import org.apache.logging.log4j.Logger;
 import javax.annotation.Nonnull;
 
 @Mod("sweetberrypie")
-public class SweetBerryPie {
+public class SweetBerryPie
+{
     public static final String MOD_ID = "sweetberrypie";
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public SweetBerryPie() {
+    public SweetBerryPie()
+    {
         DistExecutor.safeRunForDist(() -> SideProxy.Client::new, () -> SideProxy.Server::new);
     }
 
     @Nonnull
-    public static ResourceLocation getId(String path) {
+    public static ResourceLocation getId(String path)
+    {
         return new ResourceLocation(MOD_ID, path);
     }
 
