@@ -2,7 +2,7 @@ package sweetberrypie.item;
 
 import net.minecraft.item.Food;
 
-public class FoodBuilderRegistry
+public class FoodRegistry
 {
     public static final Food SWEETBERRYPIE = (new Food.Builder()).hunger(8).saturation(4.0F).build();
     public static final Food SWEETBERRYJAM = (new Food.Builder()).hunger(6).saturation(3.0F).build();
