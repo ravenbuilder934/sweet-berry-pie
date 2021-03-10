@@ -35,7 +35,7 @@ description='''
 Adds sweet berry pie to match pumpkin pie.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.minecolonies]] #optional
+[[dependencies.sweetberrypie]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -47,7 +47,7 @@ Adds sweet berry pie to match pumpkin pie.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.minecolonies]]
+[[dependencies.sweetberrypie]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5]"
