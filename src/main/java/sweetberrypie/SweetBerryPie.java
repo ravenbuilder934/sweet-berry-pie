@@ -1,28 +1,27 @@
 package sweetberrypie;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import javax.annotation.Nonnull;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import sweetberrypie.item.ItemRegistry;
 
 @Mod("sweetberrypie")
 public class SweetBerryPie
 {
     public static final String MOD_ID = "sweetberrypie";
-    public static final Logger LOGGER = LogManager.getLogger();
 
     public SweetBerryPie()
     {
-        DistExecutor.safeRunForDist(() -> SideProxy.Client::new, () -> SideProxy.Server::new);
+        IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modBus.addListener(this::setup);
+        ItemRegistry.ITEMS.register(modBus);
     }
 
-    @Nonnull
-    public static ResourceLocation getId(String path)
+    private void setup(final FMLCommonSetupEvent event)
     {
-        return new ResourceLocation(MOD_ID, path);
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
 }
