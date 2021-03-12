@@ -12,9 +12,9 @@ public class ItemRegistry
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SweetBerryPie.MOD_ID);
 
-    public static final RegistryObject<Item> sweetberrypie = ITEMS.register("sweetberrypie", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(FoodRegistry.SWEETBERRYPIE)));
+    public static final RegistryObject<Item> sweetberrypie = ITEMS.register("sweetberrypie", () -> new Item((new Item.Properties()).tab(ItemGroup.TAB_FOOD).food(FoodRegistry.SWEETBERRYPIE)));
 
-    public static final RegistryObject<Item> cookedsweetberries = ITEMS.register("cookedsweetberries", () -> new Item((new Item.Properties()).group(ItemGroup.FOOD).food(FoodRegistry.COOKEDSWEETBERRIES)));
+    public static final RegistryObject<Item> cookedsweetberries = ITEMS.register("cookedsweetberries", () -> new Item((new Item.Properties()).tab(ItemGroup.TAB_FOOD).food(FoodRegistry.COOKEDSWEETBERRIES)));
 
-    public static final RegistryObject<SweetBerryJamItem> sweetberryjam = ITEMS.register("sweetberryjam", () -> new SweetBerryJamItem((new Item.Properties()).group(ItemGroup.FOOD).containerItem(Items.GLASS_BOTTLE).food(FoodRegistry.SWEETBERRYJAM)));
+    public static final RegistryObject<SweetBerryJamItem> sweetberryjam = ITEMS.register("sweetberryjam", () -> new SweetBerryJamItem((new Item.Properties()).tab(ItemGroup.TAB_FOOD).craftRemainder(Items.GLASS_BOTTLE).food(FoodRegistry.SWEETBERRYJAM)));
 }

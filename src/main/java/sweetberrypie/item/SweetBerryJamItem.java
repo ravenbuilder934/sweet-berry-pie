@@ -17,22 +17,22 @@ public class SweetBerryJamItem extends Item
     /**
      * Return a glass bottle when finished eating. From the vanilla honey bottle code
      */
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
+    public ItemStack finishUsingItem(ItemStack stack, World worldIn, LivingEntity entityLiving)
     {
-        super.onItemUseFinish(stack, worldIn, entityLiving);
+        super.finishUsingItem(stack, worldIn, entityLiving);
         if (stack.isEmpty())
         {
             return new ItemStack(Items.GLASS_BOTTLE);
         }
         else
             {
-            if (entityLiving instanceof PlayerEntity && !((PlayerEntity)entityLiving).abilities.isCreativeMode)
+            if (entityLiving instanceof PlayerEntity && !((PlayerEntity)entityLiving).abilities.instabuild)
             {
                 ItemStack itemstack = new ItemStack(Items.GLASS_BOTTLE);
                 PlayerEntity playerentity = (PlayerEntity)entityLiving;
-                if (!playerentity.inventory.addItemStackToInventory(itemstack))
+                if (!playerentity.inventory.add(itemstack))
                 {
-                    playerentity.dropItem(itemstack, false);
+                    playerentity.drop(itemstack, false);
                 }
             }
 

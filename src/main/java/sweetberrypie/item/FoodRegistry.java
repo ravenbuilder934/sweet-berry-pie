@@ -4,7 +4,7 @@ import net.minecraft.item.Food;
 
 public class FoodRegistry
 {
-    public static final Food SWEETBERRYPIE = (new Food.Builder()).hunger(8).saturation(4.0F).build();
-    public static final Food SWEETBERRYJAM = (new Food.Builder()).hunger(6).saturation(3.0F).build();
-    public static final Food COOKEDSWEETBERRIES = (new Food.Builder()).hunger(4).saturation(2.0F).build();
+    public static final Food SWEETBERRYPIE = (new Food.Builder()).nutrition(8).saturationMod(4.0F).build();
+    public static final Food SWEETBERRYJAM = (new Food.Builder()).nutrition(6).saturationMod(3.0F).build();
+    public static final Food COOKEDSWEETBERRIES = (new Food.Builder()).nutrition(4).saturationMod(2.0F).build();
 }
