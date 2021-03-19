@@ -1,6 +1,6 @@
 # Sweet Berry Pie
 
-A mod for Minecraft that adds adds cooked sweet berries, sweet berry pie (who would've guessed?), and sweet berry jam.
+A mod for Minecraft that adds cooked sweet berries, sweet berry pie (who would've guessed?), and sweet berry jam.
 
 Cooked sweet berries restore slightly more hunger and saturation than vanilla sweet berries, and are made by smelting the vanilla sweet berries. They're used in crafting the pie and jam.
 
